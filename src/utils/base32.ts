@@ -67,4 +67,14 @@ const base32FromBuf = (buf: ArrayBuffer): string => {
     return str;
 };
 
-export { base32ToBuf, base32FromBuf };
+/**
+ * Generates an Base32 string.
+ * @param str {string}
+ * @returns {string} Base32 string
+ */
+const generateBase32 = (str: string): string => {
+    const buf = Buffer.from(str);
+    return base32FromBuf(buf);
+};
+
+export { base32ToBuf, base32FromBuf, generateBase32 };

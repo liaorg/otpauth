@@ -1,4 +1,7 @@
-import { HOTP, TOTP } from "../src";
+import { HOTP, TOTP, generateBase32 } from "../src";
+
+const base32str1 = generateBase32("base32-decoded secret");
+console.log(base32str1);
 
 const base32str =
     "6OWYXIW7QEYH34MFXCCXPZUBQDTIXBSX5GPKX4MSU2W6NHFNY2DOTEVK5OILVXN33GB6HN4QHHYLDN4AFTZZNH476KG3RAWESDUKZNHQW2KJLYMLTBHNJNPSTW33J4MAWWKNHPA";
